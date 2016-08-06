@@ -1,5 +1,6 @@
 const safeEval = require('safe-eval');
-const rp = require('request-promise');
+// const rp = require('request-promise');
+const rp = require('./http');
 
 const CDA = (() => {
 
@@ -30,7 +31,7 @@ const CDA = (() => {
     return prom;
   };
 
-  const getFileUrl = (url) => rp(url);
+  const getFileUrl = (url) => rp.getUrl(url);
 
   const download = (url) => {
     return getFileUrl(url)

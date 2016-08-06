@@ -18,7 +18,7 @@ if (!program.args.length) {
 }
 
 if (program.player) {
-  player = `${program.player} `;
+  player = `${program.player}`;
 }
 
 CDA.download(program.args[0])
