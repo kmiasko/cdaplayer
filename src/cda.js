@@ -1,5 +1,4 @@
 const safeEval = require('safe-eval');
-// const rp = require('request-promise');
 const rp = require('./http');
 
 const CDA = (() => {
