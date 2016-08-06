@@ -34,4 +34,3 @@ CDA.download(program.args[0])
       throw new Error('Can\'t get video url');
     }
   });
-

@@ -1,6 +1,6 @@
 {
   "name": "cdaplayer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plays movies from cda.pl directly in a video player",
   "main": "cdaplayer.js",
   "scripts": {
@@ -17,7 +17,9 @@
     "cda",
     "cdaplayer",
     "cdax",
-    "player"
+    "player",
+    "node",
+    "cli"
   ],
   "author": "Krzysztof Miąsko",
   "license": "MIT",
