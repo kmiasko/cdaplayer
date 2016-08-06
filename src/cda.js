@@ -2,7 +2,6 @@ const safeEval = require('safe-eval');
 const rp = require('./http');
 
 const CDA = (() => {
-
   // "emulation" of env needed by eval (video link obfuscator)
   const window = {};
 
@@ -14,10 +13,10 @@ const CDA = (() => {
       },
     };
   };
-  window.ads = () => { return false; };
-  window.checkFlash = () => { return true; };
+  window.ads = () => false;
+  window.checkFlash = () => true;
   window.navigator = {
-    userAgent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'
+    userAgent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
   };
 
   const getEval = (data) => {
@@ -32,13 +31,12 @@ const CDA = (() => {
 
   const getFileUrl = (url) => rp.getUrl(url);
 
-  const download = (url) => {
-    return getFileUrl(url)
-    .then(getEval);
-  };
+  const download = (url) => getFileUrl(url)
+    .then(getEval)
+    .catch((err) => new Error(err));
 
   return {
-    download: download,
+    download,
   };
 })();
 
