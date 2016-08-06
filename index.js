@@ -6,7 +6,7 @@ const CDA = require('./src/cda');
 let player = 'vlc';
 
 program
-  .version('0.0.1')
+  .version('1.0.2')
   .usage('[options] <url>')
   .arguments('<url>')
   .option('-p, --player [player]', 'Video player command [ default vlc ]', 'vlc')
