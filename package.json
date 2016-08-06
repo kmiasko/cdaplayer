@@ -1,0 +1,41 @@
+{
+  "name": "cdaplayer",
+  "version": "1.0.0",
+  "description": "Plays movies from cda.pl directly in a video player",
+  "main": "cdaplayer.js",
+  "scripts": {
+    "test": "None added atm"
+  },
+  "bin": {
+    "cdaplayer": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmiasko/cdaplayer.git"
+  },
+  "keywords": [
+    "cda",
+    "cdaplayer",
+    "cdax",
+    "player"
+  ],
+  "author": "Krzysztof Miąsko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmiasko/cdaplayer/issues"
+  },
+  "homepage": "https://github.com/kmiasko/cdaplayer#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "jsdom": "^9.4.1",
+    "request-promise": "^4.1.0",
+    "safe-eval": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb": "^10.0.0",
+    "eslint-plugin-import": "^1.12.0",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^6.0.0"
+  }
+}
