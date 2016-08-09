@@ -8,7 +8,6 @@ const CDA = (() => {
   window.jwplayer = () => {
     return {
       setup: (...args) => {
-        console.log(args[0].modes[0].config.file);
         return args[0].modes[0].config.file;
       },
     };
