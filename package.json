@@ -1,6 +1,6 @@
 {
   "name": "cdaplayer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Plays movies from cda.pl directly in a video player",
   "main": "cdaplayer.js",
   "scripts": {
