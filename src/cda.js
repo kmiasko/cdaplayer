@@ -20,12 +20,7 @@ const CDA = (() => {
 
   const getEval = (data) => {
     const e = data.match(/^eval(.*)$/m)[0];
-    const prom = new Promise((resolve, reject) => {
-      const result = safeEval(e, window);
-      if (result) resolve(result);
-      else reject(new Error('Can\'t evaluate code'));
-    });
-    return prom;
+    return safeEval(e, window);
   };
 
   const getFileUrl = (url) => rp.getUrl(url);
