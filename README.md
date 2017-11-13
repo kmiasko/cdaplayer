@@ -1,4 +1,4 @@
-
+# [ OUTDATED ] - after changes on cda.pl
 # cdaplayer
 
 Plays movies from cda.pl directly in a video player
